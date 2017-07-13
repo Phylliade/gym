@@ -78,7 +78,7 @@ class Continuous_MountainCarEnv(gym.Env):
 
         reward = 0
         if done:
-            reward = 10000.0
+            reward = 100.0
         reward -= math.pow(force, 2) * 0.1
 
         self.state = np.array([position, velocity])
